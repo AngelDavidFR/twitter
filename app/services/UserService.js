@@ -10,6 +10,13 @@ class UserService{
     static updateUserUsername(user,newUsername){
         user.setUsername=newUsername
     }
+    static getAllUsernames(allUsers){
+        let allUserReturn=[]
+        allUsers.forEach((element,index) => {
+            allUserReturn[index]=element.username
+        });
+        return allUserReturn
+    }
 }
 
 module.exports=UserService
