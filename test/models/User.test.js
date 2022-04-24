@@ -14,6 +14,12 @@ expect(user.lastUpdated).not.toBeUndefined()
 
 
 });
-
+test('Add getters',()=>{
+    const user=new User(1,"AngelD_FloresR","Angel","Bio")
+    expect(user.getUsername).toBe("AngelD_FloresR")
+    expect(user.getBio).toBe("Bio")
+    expect(user.getDateCreated).not.toBeUndefined()
+    expect(user.getLastUpdated).not.toBeUndefined()
+});
 
 })
