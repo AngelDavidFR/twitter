@@ -9,7 +9,7 @@ expect(user.username).toBe("AngelD_FloresR")
 expect(user.name).toBe("Angel")
 expect(user.bio).toBe("Bio")
 expect(user.dateCreated).not.toBeUndefined()
-expect(user.lastUpdated).toBe("lastUpdated")
+expect(user.lastUpdated).not.toBeUndefined()
 
 
 
