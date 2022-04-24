@@ -7,7 +7,9 @@ class UserService{
     static getInfo(user){
         return new Array(user.id,user.username,user.name,user.bio)
     }
-    
+    static updateUserUsername(user,newUsername){
+        user.setUsername=newUsername
+    }
 }
 
 module.exports=UserService
