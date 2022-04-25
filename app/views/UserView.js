@@ -8,7 +8,7 @@ if(payload==null) {result.valid=false;result.error="payload no existe";return re
 else if(hasNull(payload)==true){result.valid=false;result.error="necesitan tener un valor válido";return result}
 else{result.valid=true}
 if((result.valid==true)&&(checkKeys(payload)!=true)){result.error="necesitan tener un valor válido";return result}
-
+return User.create(payload.id,payload.username,payload.name)
 }}
 
 
